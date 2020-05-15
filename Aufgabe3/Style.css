@@ -1,0 +1,113 @@
+body {
+
+    background-image: url(bg.png);
+    font-family: sans-serif;
+    color: red;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 120pt;
+    letter-spacing: -11px;
+    color: white;
+    font-weight: bolder;
+    position: absolute;
+    top: -15%;
+    left: 30%;
+}
+
+a {font-family: sans-serif;
+    color: white;
+    background: black;
+    text-decoration: none;
+}
+
+img {
+
+    width: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    right: 220px;
+    border-radius: 10px 10px 10px 10px;
+    z-index: 9999;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 3px 4px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background: black;
+    color: red;
+}
+
+.navbar .current {
+    color: red;
+}
+
+.circle {
+    position: relative;
+    margin: -20px;
+    width: 800px;
+    left: 280px;
+    
+}
+
+.name {
+    font-size: 40px;
+    color: white;
+    font-weight: bolder;
+    position: absolute;
+    top: 25%;
+    left: 55%;
+}
+
+.logo {
+    max-width: 2.5%;
+    position: absolute;
+    left: 67%;
+    top: 33%;
+}
+
+.kontakt {
+    font-size: 35px;
+    font-weight: bolder;
+    margin-left: 300px;
+}
+
+.kontakt1 {
+    color: white;
+    background-color: grey;
+    width: 300px;
+    padding: 3px 3px 3px 3px;
+    margin-left: 300px;
+}
+
+.kontakt2 {
+    color: white;
+    background-color: grey;
+    width: 400px;
+    padding: 3px 3px 30px 3px;
+    margin-left: 300px;
+}
+
+.absenden {
+    color: white;
+    background-color: grey;
+    width: 75px;
+    padding: 3px 3px 3px 3px;
+    margin-left: 430px;
+}
