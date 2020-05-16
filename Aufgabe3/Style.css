@@ -16,6 +16,12 @@ h1 {
     left: 30%;
 }
 
+.text {
+    font-weight: bold;
+    position: relative;
+    left: 20%;
+}
+
 a {font-family: sans-serif;
     color: white;
     background: black;
