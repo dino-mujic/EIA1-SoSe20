@@ -117,3 +117,9 @@ img {
     padding: 3px 3px 3px 3px;
     margin-left: 430px;
 }
+
+.about {
+    font-size: 100px;
+    font-weight: bolder;
+    text-align: center;
+}
