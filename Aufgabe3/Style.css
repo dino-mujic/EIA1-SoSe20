@@ -53,6 +53,7 @@ img {
     text-align: center;
     padding: 3px 4px;
     text-decoration: none;
+    border-right: solid 1px white;
 }
 
 .navbar a:hover {
