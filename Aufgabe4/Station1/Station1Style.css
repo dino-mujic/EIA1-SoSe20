@@ -22,15 +22,15 @@ top: 20px;
 
 .penguin {
     display: inline-block;
-    position: absolute;
+    position: relative;
     top: 240px;
-    left: 855px;
+    left: -100px;
 }
 
 .shell {
     display: inline-block;
-    position: absolute;
-    left: 315px;
+    position: relative;
+    left: -400px;
     top: 300px;
 }
 
@@ -45,8 +45,8 @@ h1 {
 
 .text {
     display: block;
-    position: absolute;
+    position: relative;
     color: white;
-    left: 420px;
+    left: 200px;
     top: 120px;
 }

@@ -24,7 +24,7 @@ iframe {
 }
 
 .banderole {
-    position: absolute;
-    left: 742px;
-    top: 72px;
+    position: relative;
+    left: 180px;
+    top: 133px;
 }
