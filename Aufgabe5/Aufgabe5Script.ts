@@ -28,34 +28,34 @@ var euroV08P : number = euro18 - euro08;
 var noamV08P : number = noam18 - noam08;
 var asiaV08P : number = asia18 - asia08;
 
-console.log("Die Emission von Europa ist: " + euro18 , "kg CO2");
-console.log("Relativ zur Gesamtemission der Welt verursacht Europa damit " + euroReGe,"%");
-console.log("Für Europa hat sich 2018 im Vergleich zu 2008 die Emission um " + euroV08,"% verändert");
-console.log("2018 im Vergleich zu 2008 sind das " + euroV08P , "kg CO2");
+console.log("Die Emission von Europa ist: " + euro18 + "kg CO2");
+console.log("Relativ zur Gesamtemission der Welt verursacht Europa damit " + euroReGe + "%");
+console.log("Für Europa hat sich 2018 im Vergleich zu 2008 die Emission um " + euroV08 + "% verändert");
+console.log("2018 im Vergleich zu 2008 sind das " + euroV08P + "kg CO2");
 console.log("");
 
-console.log("Die Emission von Afrika ist " + afri18 , "kg CO2");
-console.log("Relativ zur Gesamtemission der Welt verursacht Afrika damit " + afriReGe,"%");
-console.log("Für Afrika hat sich 2018 im Vergleich zu 2008 die Emission um " + afriV08,"% verändert");
-console.log("2018 im Vergleich zu 2008 sind das " +afriV08P , "kg CO2");
+console.log("Die Emission von Afrika ist " + afri18 + "kg CO2");
+console.log("Relativ zur Gesamtemission der Welt verursacht Afrika damit " + afriReGe + "%");
+console.log("Für Afrika hat sich 2018 im Vergleich zu 2008 die Emission um " + afriV08 + "% verändert");
+console.log("2018 im Vergleich zu 2008 sind das " +afriV08P + "kg CO2");
 console.log("");
 
-console.log("Die Emission von Asia ist " + asia18 , "kg CO2");
-console.log("Relativ zur Gesamtemission der Welt verursacht Asia damit " + asiaReGe,"%");
-console.log("Für Asia hat sich 2018 im Vergleich zu 2008 die Emission um " + asiaV08,"% verändert");
-console.log("2018 im Vergleich zu 2008 sind das " + asiaV08P , "kg CO2");
+console.log("Die Emission von Asia ist " + asia18 + "kg CO2");
+console.log("Relativ zur Gesamtemission der Welt verursacht Asia damit " + asiaReGe + "%");
+console.log("Für Asia hat sich 2018 im Vergleich zu 2008 die Emission um " + asiaV08 + "% verändert");
+console.log("2018 im Vergleich zu 2008 sind das " + asiaV08P + "kg CO2");
 console.log("");
 
-console.log("Die Emission von South Amerika ist " + soam18 , "kg CO2");
-console.log("Relativ zur Gesamtemission der Welt verursacht South Amerika damit " + soamReGe,"%");
-console.log("Für South Amerika hat sich 2018 im Vergleich zu 2008 die Emission um " + soamV08,"% verändert");
-console.log("2018 im Vergleich zu 2008 sind das " + soamV08P , "kg CO2");
+console.log("Die Emission von South Amerika ist " + soam18 + "kg CO2");
+console.log("Relativ zur Gesamtemission der Welt verursacht South Amerika damit " + soamReGe + "%");
+console.log("Für South Amerika hat sich 2018 im Vergleich zu 2008 die Emission um " + soamV08 + "% verändert");
+console.log("2018 im Vergleich zu 2008 sind das " + soamV08P + "kg CO2");
 console.log("");
 
-console.log("Die Emission von North Amerika ist " + noam18 , "kg CO2" );
-console.log("Relativ zur Gesamtemission der Welt verursacht North Amerika damit " + noamReGe,"%");
-console.log("Für North Amerika hat sich 2018 im Vergleich zu 2008 die Emission um " + noamV08,"% verändert");
-console.log("2018 im Vergleich zu 2008 sind das " + noamV08P , "kg CO2");
+console.log("Die Emission von North Amerika ist " + noam18 + "kg CO2" );
+console.log("Relativ zur Gesamtemission der Welt verursacht North Amerika damit " + noamReGe + "%");
+console.log("Für North Amerika hat sich 2018 im Vergleich zu 2008 die Emission um " + noamV08 + "% verändert");
+console.log("2018 im Vergleich zu 2008 sind das " + noamV08P + "kg CO2");
 console.log("");
 
 
