@@ -59,3 +59,8 @@ console.log("2018 im Vergleich zu 2008 sind das " + noamV08P + "kg CO2");
 console.log("");
 
 
+document.querySelector(".europepng").addEventListener("click", europefunction);
+
+function europefunction(){
+    document.querySelector(".h1").innerHTML= "Carbon Dioxide Emissions in Europe";
+}
