@@ -8,6 +8,8 @@ var noam08 : number = 6600.4;
 var noam18 : number = 6035.6;
 var asia08 : number = 12954.7;
 var asia18 : number = 16274.1;
+var aust08 : number = 1993;
+var aust18 : number = 2100.5;
 
 var Emgesamt : number = afri18 + soam18 + euro18 + noam18 + asia18;
 var afriReGe : number = (afri18 / Emgesamt) *100;
@@ -15,18 +17,21 @@ var soamReGe : number = (soam18 / Emgesamt) *100;
 var euroReGe : number = (euro18 / Emgesamt) *100;
 var noamReGe : number = (noam18 / Emgesamt) *100;
 var asiaReGe : number = (asia18 / Emgesamt) *100;
+var austReGe : number = (aust18 / Emgesamt) *100;
 
 var afriV08 : number = (afri18 - afri08) / afri08 * 100;
 var soamV08 : number = (soam18 - soam08) / soam08 * 100;
 var euroV08 : number = (euro18 - euro08) / euro08 * 100;
 var noamV08 : number = (noam18 - noam08) / noam08 * 100;
 var asiaV08 : number = (asia18 - asia08) / asia08 * 100;
+var austV08 : number = (aust18 - aust08) / aust08 * 100;
 
 var afriV08P : number = afri18 - afri08;
 var soamV08P : number = soam18 - soam08;
 var euroV08P : number = euro18 - euro08;
 var noamV08P : number = noam18 - noam08;
 var asiaV08P : number = asia18 - asia08;
+var austV08P : number = aust18 - aust08;
 
 console.log("Die Emission von Europa ist: " + euro18 + "kg CO2");
 console.log("Relativ zur Gesamtemission der Welt verursacht Europa damit " + euroReGe + "%");
@@ -59,8 +64,76 @@ console.log("2018 im Vergleich zu 2008 sind das " + noamV08P + "kg CO2");
 console.log("");
 
 
+window.addEventListener("load", function() {
+
 document.querySelector(".europepng").addEventListener("click", europefunction);
 
 function europefunction(){
     document.querySelector(".h1").innerHTML= "Carbon Dioxide Emissions in Europe";
+    document.querySelector(".EmAb").innerHTML= euro18;
+    document.querySelector(".ReToWorld").innerHTML= euroReGe.toFixed(2) + "%";
+    document.querySelector(".GrRaPer").innerHTML= euroV08P.toFixed(2) + "%";
+    document.querySelector(".GrRaAb").innerHTML= euroV08.toFixed(2) + "kg";
+    document.querySelector("div.chart").setAttribute("Style", "height: 14.5%");
 }
+
+
+document.querySelector(".northamericapng").addEventListener("click", northamericafunction);
+
+function northamericafunction(){
+    document.querySelector(".h1").innerHTML= "Carbon Dioxide Emissions in North America";
+    document.querySelector(".EmAb").innerHTML= noam18;
+    document.querySelector(".ReToWorld").innerHTML= noamReGe.toFixed(2) + "%";
+    document.querySelector(".GrRaPer").innerHTML= noamV08P.toFixed(2) + "%";
+    document.querySelector(".GrRaAb").innerHTML= noamV08.toFixed(2) + "kg";
+    document.querySelector("div.chart").setAttribute("Style", "height: 20.8%");
+}
+
+
+document.querySelector(".southamericapng").addEventListener("click", southamericafunction);
+
+function southamericafunction(){
+    document.querySelector(".h1").innerHTML= "Carbon Dioxide Emissions in South America";
+    document.querySelector(".EmAb").innerHTML= soam18;
+    document.querySelector(".ReToWorld").innerHTML= soamReGe.toFixed(2) + "%";
+    document.querySelector(".GrRaPer").innerHTML= soamV08P.toFixed(2) + "%";
+    document.querySelector(".GrRaAb").innerHTML= soamV08.toFixed(2) + "kg";
+    document.querySelector("div.chart").setAttribute("Style", "height: 4.35%");
+}
+
+
+document.querySelector(".africapng").addEventListener("click", africafunction);
+
+function africafunction(){
+    document.querySelector(".h1").innerHTML= "Carbon Dioxide Emissions in Africa";
+    document.querySelector(".EmAb").innerHTML= afri18;
+    document.querySelector(".ReToWorld").innerHTML= afriReGe.toFixed(2) + "%";
+    document.querySelector(".GrRaPer").innerHTML= afriV08P.toFixed(2) + "%";
+    document.querySelector(".GrRaAb").innerHTML= afriV08.toFixed(2) + "kg";
+    document.querySelector("div.chart").setAttribute("Style", "height: 4.26%");
+}
+
+
+document.querySelector(".asiapng").addEventListener("click", asiafunction);
+
+function asiafunction(){
+    document.querySelector(".h1").innerHTML= "Carbon Dioxide Emissions in Asia";
+    document.querySelector(".EmAb").innerHTML= asia18;
+    document.querySelector(".ReToWorld").innerHTML= asiaReGe.toFixed(2) + "%";
+    document.querySelector(".GrRaPer").innerHTML= asiaV08P.toFixed(2) + "%";
+    document.querySelector(".GrRaAb").innerHTML= asiaV08.toFixed(2) + "kg";
+    document.querySelector("div.chart").setAttribute("Style", "height: 56.1%");
+}
+
+document.querySelector(".australiapng").addEventListener("click", australiafunction);
+
+function australiafunction(){
+    document.querySelector(".h1").innerHTML= "Carbon Dioxide Emissions in Australia";
+    document.querySelector(".EmAb").innerHTML= aust18;
+    document.querySelector(".ReToWorld").innerHTML= austReGe.toFixed(2) + "%";
+    document.querySelector(".GrRaPer").innerHTML= austV08P.toFixed(2) + "%";
+    document.querySelector(".GrRaAb").innerHTML= austV08.toFixed(2) + "kg";
+    document.querySelector("div.chart").setAttribute("Style", "height: 7.25%");
+}
+
+})
