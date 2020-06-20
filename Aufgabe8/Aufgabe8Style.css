@@ -1,0 +1,53 @@
+body {
+    text-align: center;
+    background-color: #000000;
+}
+
+button {
+    background-color: #ff1493;
+    padding: 150px 150px;
+    border-radius: 20px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color :#ffffff;
+}
+
+button:active {
+    transform: scale(1.3);
+}
+
+.playbutton {
+    cursor: pointer;
+}
+
+#buttonblue {
+    background-color: #00008b;
+}
+
+#buttonblue:hover {
+    background-color: #ffffff;
+}
+
+#buttonyellow {
+    background-color: #ffb90f;
+}
+
+#buttonyellow:hover {
+    background-color: #ffffff;
+}
+
+.fas{
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    font-size: 130px;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+.fas:hover {
+    color: #2F4F4F;
+}
