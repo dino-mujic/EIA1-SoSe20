@@ -33,14 +33,14 @@ function playbeat(): void {
     },                         500);
 }
 
-var playbutton = document.querySelector(".fa-play");
+var playbutton = document.querySelector(".fa-play")
 playbutton.addEventListener("click", function () {
     if (playbutton.getAttribute("class") == "fas fa-play") {
-        playbutton.setAttribute("class", "fas fa-pause");
+        playbutton.setAttribute("class", "fas fa-pause")
         playbeat();
     }
     else {
-        playbutton.setAttribute("class", "fas fa-play");
+        playbutton.setAttribute("class", "fas fa-play")
         clearInterval(meinInterval);
     }
 })
