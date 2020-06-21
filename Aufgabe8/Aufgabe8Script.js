@@ -39,8 +39,8 @@ window.addEventListener("load", function () {
             clearInterval(meinInterval);
         }
     });
-    document.querySelector(".fa-trash-alt").addEventListener("click", function () { beatdelete(); });
-    function beatdelete() {
+    document.querySelector(".fa-trash-alt").addEventListener("click", function () { beatusdeletus(); });
+    function beatusdeletus() {
         beat.length = 0;
     }
 });

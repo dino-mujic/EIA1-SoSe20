@@ -45,8 +45,8 @@ playbutton.addEventListener("click", function () {
     }
 })
 
-document.querySelector(".fa-trash-alt").addEventListener("click", function () { beatdelete(); });
-function beatdelete(): void {
+document.querySelector(".fa-trash-alt").addEventListener("click", function () { beatusdeletus(); });
+function beatusdeletus(): void {
     beat.length = 0;
 }
 
