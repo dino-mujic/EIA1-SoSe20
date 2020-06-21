@@ -17,5 +17,35 @@ function playsample(sampleplay: number) {
     var sound = new Audio(samples[sampleplay]);
     sound.play();
 }
- } 
 
+var beat: string[] = ["hihat.mp3", "kick.mp3", "snare.mp3"];
+var meinInterval: number;
+function playbeat(): void {
+    var meineZaehlervariable: number = 0;
+    console.log(meineZaehlervariable);
+    console.log(beat[meineZaehlervariable]);
+
+    meinInterval = setInterval(function () {
+        var playAudio: HTMLAudioElement = new Audio(beat[meineZaehlervariable]);
+        playAudio.play();
+        meineZaehlervariable++;
+        if (meineZaehlervariable >= 3) {
+            meineZaehlervariable = 0;
+        }
+    },                         500);
+}
+
+var playbutton = document.querySelector(".fa-play");
+playbutton.addEventListener("click", function () {
+    if (playbutton.getAttribute("class") == "fas fa-play") {
+        playbutton.setAttribute("class", "fas fa-pause");
+        playbeat();
+    }
+    else {
+        playbutton.setAttribute("class", "fas fa-play");
+        clearInterval(meinInterval);
+    }
+})
+})
+
+//Hilfe von Legende Anna
