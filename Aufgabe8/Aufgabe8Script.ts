@@ -22,8 +22,6 @@ var beat: string[] = ["hihat.mp3", "kick.mp3", "snare.mp3"];
 var meinInterval: number;
 function playbeat(): void {
     var meineZaehlervariable: number = 0;
-    console.log(meineZaehlervariable);
-    console.log(beat[meineZaehlervariable]);
 
     meinInterval = setInterval(function () {
         var playAudio: HTMLAudioElement = new Audio(beat[meineZaehlervariable]);
@@ -46,6 +44,12 @@ playbutton.addEventListener("click", function () {
         clearInterval(meinInterval);
     }
 })
+
+document.querySelector(".fa-trash-alt").addEventListener("click", function () { beatdelete(); });
+function beatdelete(): void {
+    beat.length = 0;
+}
+
 })
 
 //Hilfe von Legende Anna

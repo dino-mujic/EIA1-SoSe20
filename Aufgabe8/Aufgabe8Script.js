@@ -19,8 +19,6 @@ window.addEventListener("load", function () {
     var meinInterval;
     function playbeat() {
         var meineZaehlervariable = 0;
-        console.log(meineZaehlervariable);
-        console.log(beat[meineZaehlervariable]);
         meinInterval = setInterval(function () {
             var playAudio = new Audio(beat[meineZaehlervariable]);
             playAudio.play();
@@ -41,6 +39,10 @@ window.addEventListener("load", function () {
             clearInterval(meinInterval);
         }
     });
+    document.querySelector(".fa-trash-alt").addEventListener("click", function () { beatdelete(); });
+    function beatdelete() {
+        beat.length = 0;
+    }
 });
 //Hilfe von Legende Anna
 //# sourceMappingURL=Aufgabe8Script.js.map
