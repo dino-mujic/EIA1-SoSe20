@@ -20,14 +20,14 @@ interface todo {
 }
 
 var todolist: todo[] = [{
-text: "I",
+text: "The Lighthouse",
 checked: true },
 { 
-    text: "Need",
+    text: "Knives Out",
     checked: true
 },
 { 
-    text: "Sleep",
+    text: "Uncut Gems",
     checked: true
 }
 ];
@@ -124,7 +124,7 @@ function updateCounter(): void {
          opentasks++;
      }
     }
-    counterDOMElement.innerHTML = todolist.length + " in total " + opentasks + " open " + donetasks + " done ";
+    counterDOMElement.innerHTML = todolist.length + " movies in total " + opentasks + " unwatched " + donetasks + " watched ";
 }
 /**
  * Ein neues ToDo wird folgendermaßen erstellt:
@@ -204,4 +204,5 @@ function deleteTodo(index) {
      */
     drawListToDOM();
 }
-//# sourceMappingURL=script.js.map
+
+ //zusammen in der Fragerunde am Freitag gelöst
