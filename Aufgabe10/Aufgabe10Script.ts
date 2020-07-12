@@ -205,4 +205,47 @@ function deleteTodo(index) {
     drawListToDOM();
 }
 
- //zusammen in der Fragerunde am Freitag gelöst
+
+ declare var Artyom: any;
+
+window.addEventListener("load", function(): void {
+    const artyom: any = new Artyom();
+    
+    artyom.addCommands({
+        indexes: ["Add *"],
+        smart: true,
+        action: function( i: any, wildcard: string): void {
+            console.log("New movie added: " + wildcard);
+           
+            todolist.unshift({ 
+                text: (wildcard),
+               checked: false
+                });
+            drawListToDOM(); 
+        }
+
+    });
+    
+    function startContinuousArtyom(): void {
+        artyom.fatality();
+    
+        setTimeout(
+            function(): void {
+                artyom.initialize({
+                    lang: "en-US",
+                    continuous: true,
+                    listen: true,
+                    interimResults: true,
+                    debug: true
+                }).then(function(): void {
+                    console.log("Ready!");
+                });
+            }, 
+            250);
+    }
+    
+    startContinuousArtyom();
+    
+});
+
+//Bearbeitung bei durchführung am Freitag + Hilfe von Moritz

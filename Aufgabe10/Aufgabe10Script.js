@@ -190,5 +190,35 @@ function deleteTodo(index) {
      */
     drawListToDOM();
 }
-//zusammen in der Fragerunde am Freitag gelöst
+window.addEventListener("load", function () {
+    const artyom = new Artyom();
+    artyom.addCommands({
+        indexes: ["Add *"],
+        smart: true,
+        action: function (i, wildcard) {
+            console.log("New movie added: " + wildcard);
+            todolist.unshift({
+                text: (wildcard),
+                checked: false
+            });
+            drawListToDOM();
+        }
+    });
+    function startContinuousArtyom() {
+        artyom.fatality();
+        setTimeout(function () {
+            artyom.initialize({
+                lang: "en-US",
+                continuous: true,
+                listen: true,
+                interimResults: true,
+                debug: true
+            }).then(function () {
+                console.log("Ready!");
+            });
+        }, 250);
+    }
+    startContinuousArtyom();
+});
+//Bearbeitung bei durchführung am Freitag + Hilfe von Moritz
 //# sourceMappingURL=Aufgabe10Script.js.map
