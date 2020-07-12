@@ -193,7 +193,7 @@ function deleteTodo(index) {
 window.addEventListener("load", function () {
     const artyom = new Artyom();
     artyom.addCommands({
-        indexes: ["Add *"],
+        indexes: ["Add movie *"],
         smart: true,
         action: function (i, wildcard) {
             console.log("New movie added: " + wildcard);

@@ -212,7 +212,7 @@ window.addEventListener("load", function(): void {
     const artyom: any = new Artyom();
     
     artyom.addCommands({
-        indexes: ["Add *"],
+        indexes: ["Add movie *"],
         smart: true,
         action: function( i: any, wildcard: string): void {
             console.log("New movie added: " + wildcard);
